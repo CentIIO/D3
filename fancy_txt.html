@@ -3,13 +3,28 @@
 	<head>
 		<meta charset="utf-8">
 	<style>
+		svg a{
+			fill:blue;
+
+		}
+
+		svg a:visited{
+			fill:purple;
+
+		}
+
+
+		svg a:hover{
+
+			text-decoration:underline;
+		}
 	</style>
 	</head>
 
 
 	<body>
 		<!Create SVG element in the body with CSS>
-		<svg width="500px" height="500px">
+		<svg width="750px" height="750px">
 			<!Some text with underscore and point>
 			<text x="10" y="50" font-size="40" fill="grey"> Key point  here is...</text>
 			<circle cx="10" cy="50" r="4" fill="magenta"/>
@@ -26,6 +41,8 @@
 			<text x="450" y="300" text-anchor="end"> This Text is</text>
 			<text x="450" y="315" text-anchor="end"> Right Aligned</text>
 
+			<!Creating link a tag>
+			<text x="10" y="350" > Here's a where to go to <a xlink:href="https://www.w3schools.com/graphics/svg_text.asp">learn more abovt SVG text</a>, including how to rotate it</text>
 		</svg>
 
 	</body>
