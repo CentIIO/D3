@@ -7,11 +7,44 @@
 
 	<body>
 		<p> First Example in SVG</p>
-		<!Create SVG element in the body>
-		<svg width="500px" height="500px">
+		<!--Create SVG element in the body-->
+		<svg width="1050px" height="1050px">
 			<circle cx="120" cy="50" r="20" stroke="green" stroke-width="4" fill="yellow"/>
 			<circle cx="15" cy="50" r="10" stroke="green" stroke-width="4" fill="yellow"/>
 			<circle cx="60" cy="100" r="50" stroke="green" stroke-width="4" fill="yellow"/>
+			
+			<!--Using Style Properties-->
+			<circle cx="30" cy="250" r="20" fill="BlanchedAlmond"/><!--use color name-->
+			<circle cx="80" cy="250" r="20" stroke="#0000FF" stroke-width="5" fill="none"/><!--use hex code for color-->
+			<circle cx="130" cy="250" r="20" stroke="rgb(139,0,139)" stroke-width="5" fill="none"/><!--use RGB code for color-->
+
+
+			<!--Using Opacity Procperites-->
+			<circle cx="130" cy="300" r="20" stroke="rgb(0,255,0)" fill="rgb(0,255,0)"  opacity="0.5"/><!--use Opacity for the color-->
+			<circle cx="150" cy="300" r="20" stroke="rgb(0,255,0)" fill="rgba(0,255,0,0.5)"/><!--use RGBA pproperties for setting opaque-->
+
+			<!--Using Stroke Properties-->
+			<circle cx="50" cy="350" r="25" stroke="red" stroke-width="4" fill="blue" stroke-opacity="0.8"/><!--Using Stroke Opacity Properties-->
+			<line x1="10" y1="400" x2="180" y2="400" stroke="red" stroke-width="20" stroke-linecap="butt"/>
+			<text x= "190"y="402" font-weight="Bold">Stroke-LineCap:Butt</text>
+	
+			<line x1="10" y1="460" x2="180" y2="460" stroke="purple" stroke-width="20" stroke-linecap="round"/>
+                        <text x= "190"y="462" font-weight="Bold">Stroke-LineCap:Round</text>
+
+                        <line x1="10" y1="520" x2="180" y2="520" stroke="purple" stroke-width="20" stroke-linecap="Square"/>
+                        <text x= "190"y="522" font-weight="Bold">Stroke-LineCap:Square</text>
+
+                        <line x1="600"y1="200" x2="180" y2="200" stroke="red" stroke-width="20" stroke-dasharray="1 1"/>
+                        <text x= "600"y="202" font-weight="Bold">stroke-dasharray="1 1"</text>
+
+                        <line x1="600"y1="260" x2="180" y2="260" stroke="purple" stroke-width="20"  stroke-dasharray="10 4 4 4"/>
+                        <text x= "604"y="262" font-weight="Bold"> stroke-dasharray="10 4 4 4"</text>
+
+                        <line x1="600"y1="320" x2="180" y2="320" stroke="purple" stroke-width="20"  stroke-dasharray="1 5 10"/>
+                        <text x= "604"y="322" font-weight="Bold"> stroke-dasharray="5 10 2 3 4"</text>
+
+
+
 		</svg>
 
 	</body>
