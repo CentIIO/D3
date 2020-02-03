@@ -6,21 +6,62 @@
    </head>
 
    <body>
-  
+  	<!--1)Selection by Class ID-->
 	<div id = "intro" >
 	      Hello There!!!
 	</div>
-	      
+	
 
+	<!--2)Selection by Class name
+	<div class = "myclass">
+         Hello World!
+      	</div>
+	-->
 
+	<!---3)Selection by Tag
+	<div>
+         Hello D3!    
+        </div>  
+	-->
+	
 
       <div class="class2">
 	 <svg width = "500" height = "500">
-   	<rect x = "0" y = "0" width = "300" height = "200" fill = "yellow"></rect>
+   	<rect x = "0" y = "0" width = "300" height = "200" fill = "grey"></rect>
 	</svg>
       </div>
       <script>
-         alert(d3.select("#intro").text());
+	/** A) Just selecting Different div by class, id-**/
+	//Uncomment Tag Accordingly
+        /*(1)*/ //alert(d3.select("#intro").text());
+	/*(2)*/ //alert(d3.select(".myclass").text());
+ 	/*(3)*/ //alert(d3.select("div").text());
+
+	/** B) Just selecting Different div by class, id by appending additional text-**/
+	//Uncomment Tag Accordingly
+        /*(1)*/ //d3.select("#intro").append("span").text("from Class ID");
+	/*(2)*/ //d3.select(".myclass").append("span").text("from WebDev");
+ 	/*(3)*/ //d3.select("div").append("span").text("from WebDev");	
+
+
+	/**C ) Performing Step B without chaining, we can use variables too**/
+	/*
+	var body=d3.select("#intro");
+	var span=body.append("span");
+	span.text("from Not chaining Method");*/
+
+
+	/**D ) Performing Step B USING html() method **/
+	//d3.select("#intro").html("Hello World! <span>from D3.js</span>");
+	
+	/**E ) Performing Step B USING attr() Method **/
+	//d3.select("#intro").attr("style", "color: red");
+
+	/**F) Performing Step B USING style() Method **/
+	d3.select("#intro").style("color", "#629855");
+
+
+	
       </script>
    </body>
 </html>
