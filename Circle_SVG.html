@@ -2,6 +2,40 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<style>
+		svg .Layer_text{
+			
+			fill:lightgrey;
+
+		}
+
+		svg .Layer_Rect{	
+			fill:crimson;
+			opacity:0.5;
+
+
+		}
+
+		svg .trans_blue_group{
+			fill:blue;
+			stroke-width:3;
+
+		}
+		svg .trans_red_group{
+			fill:red;
+			stroke-width:3;
+
+		}
+		svg .trans_green_group{
+			fill:green;
+			stroke-width:3;
+
+		}
+
+
+		
+		
+		</style>
 	</head>
 
 
@@ -43,8 +77,28 @@
                         <line x1="600"y1="320" x2="180" y2="320" stroke="purple" stroke-width="20"  stroke-dasharray="1 5 10"/>
                         <text x= "604"y="322" font-weight="Bold"> stroke-dasharray="5 10 2 3 4"</text>
 
+			<!--Creating Layers-->
+			<text x= "300"y="20" class="Layer_text"> Text Background</text>
+			<rect x= "275" y="0"  width="200" height="50" class="Layer_Rect"/>
+			<rect x= "505" y="0"  width="200" height="50" class="Layer_Rect"/>
+			<text x= "524"y="20" class="Layer_text"> Text Foreground</text>
 
 
+			<!---Creating Groups-->
+
+			<g class="trans_blue_group">
+				<text x="10" y="700" > Blue Group </text>
+				<rect x="10" y="740"  width="50" height="50"  rx="10" ry="10"/>
+				<polygon points="130,730,120,770,90,750"/>
+				<line x1="80" y1="775" x2="120" y2="830" stroke="blue"/>
+			</g>
+
+			<g class="trans_red_group">
+				<text x="210" y="700" > red Group </text>
+				<rect x="210" y="740"  width="50" height="50"  rx="10" ry="10"/>
+				<polygon points="300,730,290,770,260,750"/>
+				<line x1="280" y1="775" x2="340" y2="830" stroke="red"/>
+			</g>
 		</svg>
 
 	</body>
