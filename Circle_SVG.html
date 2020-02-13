@@ -42,7 +42,7 @@
 	<body>
 		<p> First Example in SVG</p>
 		<!--Create SVG element in the body-->
-		<svg width="1050px" height="1050px">
+		<svg width="1000px" height="1000px">
 			<circle cx="120" cy="50" r="20" stroke="green" stroke-width="4" fill="yellow"/>
 			<circle cx="15" cy="50" r="10" stroke="green" stroke-width="4" fill="yellow"/>
 			<circle cx="60" cy="100" r="50" stroke="green" stroke-width="4" fill="yellow"/>
@@ -86,19 +86,33 @@
 
 			<!---Creating Groups-->
 
-			<g class="trans_blue_group">
+			<!g class="trans_blue_group">
+			<g class="trans_blue_group" transform="scale(1.15)">
 				<text x="10" y="700" > Blue Group </text>
 				<rect x="10" y="740"  width="50" height="50"  rx="10" ry="10"/>
 				<polygon points="130,730,120,770,90,750"/>
 				<line x1="80" y1="775" x2="120" y2="830" stroke="blue"/>
 			</g>
 
-			<g class="trans_red_group">
+			<!g class="trans_red_group">
+			<g class="trans_red_group" transform="translate(400,100) ">
 				<text x="210" y="700" > red Group </text>
 				<rect x="210" y="740"  width="50" height="50"  rx="10" ry="10"/>
 				<polygon points="300,730,290,770,260,750"/>
 				<line x1="280" y1="775" x2="340" y2="830" stroke="red"/>
 			</g>
+
+			<!g class="trans_green_group">
+			<g class="trans_green_group"transform="translate(170,320) ">
+				<text x="410" y="700" > Green Group </text>
+				<rect x="410" y="740"  width="50" height="50"  rx="10" ry="10"/>
+				<polygon points="520,730,490,770,460,750"/>
+				<line x1="470" y1="775" x2="540" y2="830" stroke="green"/>
+			</g>
+
+			<!--Trandforming Groups-->	
+
+			
 		</svg>
 
 	</body>
